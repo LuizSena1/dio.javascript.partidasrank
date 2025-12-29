@@ -1,11 +1,6 @@
 const readline = require('readline');
 const {stdin: input, stdout: output} = require('node:process');
-const { resolve } = require('node:dns');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output:process.stdout,
-    prompt: '>'
-});
+const rl = readline.createInterface({input,output});
 function Question(info){
     return new Promise(resolve =>{
         rl.question(info,resolve);
